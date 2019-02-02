@@ -1,0 +1,46 @@
+@media screen and (max-width: 320px) {
+    .container{
+        /* header section */
+        .head-container{
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logo{
+                border-bottom: 1px solid #707070;
+                margin-bottom: 8px;
+                padding-bottom: 8px;
+            }
+            .social{
+                /* background-color: tomato; */
+                display: flex;
+                .social-item{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 35px;
+                    }
+                }
+            }
+        }
+        /* main section */
+        .main{
+            background-color: $silvercolor;
+            padding: 12px;
+            .main-information{
+                .title{
+                    /* text-align: center; */
+                    font-size: $fontbase;
+                }
+                .subtitle{
+                    color: #707070;
+                    font-size: $fontnormal;
+                }
+                .info{
+                    text-align: justify;
+                    font-size: $fontsmall;
+                }
+            }
+        }
+    }
+}

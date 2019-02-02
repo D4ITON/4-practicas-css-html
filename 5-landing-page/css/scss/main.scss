@@ -1,1 +1,32 @@
-$redcolor: #e74c3c;
+/* reset default values */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; // hace q el ancho total se apliquen en todas las partes del elemento
+}
+
+/* variables */
+$graycolor: #95a5a6;
+$greencolor: #27ae60;
+$bluecolor: #3498db;
+$orangecolor: #f39c12;
+$silvercolor: #bdc3c7;
+$source-sans-pro: Source Sans Pro ,sans-serif;
+$fontsmaller: 12px;
+$fontsmall: 14px;
+$fontnormal: 16px;
+$fontbase: 20px;
+
+
+/* general values */
+body{
+    font-family: $source-sans-pro;
+}
+
+/* Imports common width of devices */
+@import 'components/320px';
+@import 'components/480px';
+@import 'components/768px';
+@import 'components/1024px';
+@import 'components/1680px';
+

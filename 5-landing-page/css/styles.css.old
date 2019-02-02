@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body .container {
+  background: url("../img/background.jpg");
+  height: 100vh;
+  /* padding: 35px; */
+}
+body .container .head-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+body .container .head-container .social {
+  display: flex;
+  justify-content: space-around;
+}
+body .container .head-container .social .social-item img {
+  width: 45px;
+}
+
+/*# sourceMappingURL=styles.css.map */
