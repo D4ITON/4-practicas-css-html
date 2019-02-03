@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset default values */
 * {
   margin: 0;
@@ -40,8 +41,12 @@ body {
     width: 35px;
   }
   .container .main {
-    background-color: #bdc3c7;
+    /* Seccion de la información; */
+    /* seccion del formulario */
+  }
+  .container .main .main-information {
     padding: 12px;
+    background-color: #bdc3c7;
   }
   .container .main .main-information .title {
     /* text-align: center; */
@@ -50,11 +55,22 @@ body {
   .container .main .main-information .subtitle {
     color: #707070;
     font-size: 16px;
+    margin-top: 10px;
   }
   .container .main .main-information .info {
     text-align: justify;
     font-size: 14px;
+    margin: 10px 0;
+    /* color: red; */
   }
+}
+.button {
+  /* font-family: 'Source Sans Pro Bold'; */
+  background: #2185D0;
+  border-radius: 7px;
+  padding: 8px 15px;
+  color: white;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

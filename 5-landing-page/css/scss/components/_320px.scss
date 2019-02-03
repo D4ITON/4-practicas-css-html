@@ -25,9 +25,10 @@
         }
         /* main section */
         .main{
-            background-color: $silvercolor;
-            padding: 12px;
+            /* Seccion de la información; */
             .main-information{
+                padding: 12px;
+                background-color: $silvercolor;
                 .title{
                     /* text-align: center; */
                     font-size: $fontbase;
@@ -35,12 +36,16 @@
                 .subtitle{
                     color: #707070;
                     font-size: $fontnormal;
+                    margin-top: 10px;
                 }
                 .info{
                     text-align: justify;
                     font-size: $fontsmall;
+                    margin: 10px 0;
+                    /* color: red; */
                 }
             }
+            /* seccion del formulario */
         }
     }
 }
