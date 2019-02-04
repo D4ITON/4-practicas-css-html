@@ -1,4 +1,4 @@
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .container{
         /* header section */
         .head-container{
@@ -6,6 +6,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            /* background-color: rgba($color: $silvercolor, $alpha: .4); */
+            background-color: #fff;
             .logo{
                 border-bottom: 1px solid #707070;
                 margin-bottom: 8px;
@@ -46,6 +48,38 @@
                 }
             }
             /* seccion del formulario */
+            .main-form{
+                padding: 12px;
+                background-color: rgba($color: $bluecolor, $alpha: .8);
+                .title{
+                    text-align: center;
+                    padding: 10px;
+                }
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .input-form{
+                        border: none;
+                        height: 30px;
+                        margin: 5px 0;
+                        padding: 3px;
+                        border-radius: 5px;
+                    }
+                    .area-form{
+                        margin: 5px 0;
+                    }
+                    .button{
+                        align-self: center;
+                    }
+                }
+            }
+        }
+        .footer{
+            background-color: rgba($color: #fff, $alpha: .8);
+            position: absolute;
+            bottom: 0;
+            padding: 8px;
         }
     }
 }

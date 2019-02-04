@@ -10,10 +10,11 @@
 /* general values */
 body {
   font-family: Source Sans Pro, sans-serif;
+  background: url("../../img/background.jpg");
 }
 
 /* Imports common width of devices */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .container {
     /* header section */
     /* main section */
@@ -23,6 +24,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: rgba($color: $silvercolor, $alpha: .4); */
+    background-color: #fff;
   }
   .container .head-container .logo {
     border-bottom: 1px solid #707070;
@@ -62,6 +65,38 @@ body {
     font-size: 14px;
     margin: 10px 0;
     /* color: red; */
+  }
+  .container .main .main-form {
+    padding: 12px;
+    background-color: rgba(52, 152, 219, 0.8);
+  }
+  .container .main .main-form .title {
+    text-align: center;
+    padding: 10px;
+  }
+  .container .main .main-form .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .container .main .main-form .form .input-form {
+    border: none;
+    height: 30px;
+    margin: 5px 0;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .container .main .main-form .form .area-form {
+    margin: 5px 0;
+  }
+  .container .main .main-form .form .button {
+    align-self: center;
+  }
+  .container .footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
   }
 }
 .button {
