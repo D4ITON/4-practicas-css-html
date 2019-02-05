@@ -1,0 +1,67 @@
+/* General */
+body{
+    font-family: Helvetica, sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Nenu */
+.menu{
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: #999;
+    color: #f4f4f4;
+}
+/* Lista */
+.lista{
+    margin-bottom: 20px;
+}
+.lista li{
+    border: 1px solid gray;
+    border-top: transparent;
+    width: 180px;
+}
+.lista li a{
+    color: gray;
+    display: block;
+    padding: 10px 0 10px 10px;
+    text-decoration: none;
+}
+.lista li:first-child{
+    border-top: 1px solid gray;
+    border-radius: 10px 10px 0 0;
+}
+.lista li:last-child{
+    border-radius: 0 0 10px 10px;
+}
+.lista li:nth-child(odd){ /*odd impares*/
+    background-color: #f4f4f4;
+}
+/* Redes */
+.redes li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #00aced;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.redes li a{
+    font-size: 24px;
+    color: #fff;
+    line-height: 50px;
+}
