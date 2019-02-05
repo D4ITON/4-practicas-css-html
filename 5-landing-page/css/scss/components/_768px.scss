@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+    .main{
+        justify-content: space-around;
+        .main-information{
+            width: 40%;
+        }
+        .main-form{
+            width: 40%;
+        }
+    }
+}

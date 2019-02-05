@@ -21,7 +21,10 @@ $fontbase: 20px;
 /* general values */
 body{
     font-family: $source-sans-pro;
-    background: url('../../img/background.jpg');
+    height: 100vh;
+}
+.container{
+    background: url('../../img/wallpaper.jpg');
 }
 
 /* Imports common width of devices */

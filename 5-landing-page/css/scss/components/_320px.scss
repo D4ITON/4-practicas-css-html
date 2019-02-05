@@ -1,13 +1,23 @@
 @media screen and (min-width: 320px) {
     .container{
         /* header section */
+        /* background: url('../../img/background.jpg'); */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100vh;
+        /* background-color: red; */
         .head-container{
+            
             padding: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* background-color: rgba($color: $silvercolor, $alpha: .4); */
-            background-color: #fff;
+            background-color: rgba($color: $silvercolor, $alpha: .9);
+            width: 25%;
+            margin: auto;
+            border-radius: 5px;
+            /* background-color: #fff; */
             .logo{
                 border-bottom: 1px solid #707070;
                 margin-bottom: 8px;
@@ -27,9 +37,15 @@
         }
         /* main section */
         .main{
+            /* seccion para ambos items */
+            .main-information, .main-form{
+                border-radius: 10px;
+                padding: 30px;
+                width: 40%;
+                height: 40%;
+            }   
             /* Seccion de la información; */
             .main-information{
-                padding: 12px;
                 background-color: $silvercolor;
                 .title{
                     /* text-align: center; */
@@ -49,7 +65,6 @@
             }
             /* seccion del formulario */
             .main-form{
-                padding: 12px;
                 background-color: rgba($color: $bluecolor, $alpha: .8);
                 .title{
                     text-align: center;
@@ -76,10 +91,14 @@
             }
         }
         .footer{
-            background-color: rgba($color: #fff, $alpha: .8);
-            position: absolute;
-            bottom: 0;
+            background-color: $graycolor;
+            /* position: absolute; */
+            width: 100%;
+            height: 100px;
+            /* bottom: 0; */
             padding: 8px;
+            align-self: flex-end;
+            text-align: center;
         }
     }
 }

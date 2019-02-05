@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* reset default values */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* variables */
+/* general values */
+body {
+  font-family: Source Sans Pro, sans-serif;
+  height: 100vh; }
+
+.container {
+  background: url("../../img/wallpaper.jpg"); }
+
+/* Imports common width of devices */
+@media screen and (min-width: 320px) {
+  .container {
+    /* header section */
+    /* background: url('../../img/background.jpg'); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    min-height: 100vh;
+    /* background-color: red; */
+    /* main section */ }
+    .container .head-container {
+      padding: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: rgba(189, 195, 199, 0.9);
+      width: 25%;
+      margin: auto;
+      border-radius: 5px;
+      /* background-color: #fff; */ }
+      .container .head-container .logo {
+        border-bottom: 1px solid #707070;
+        margin-bottom: 8px;
+        padding-bottom: 8px; }
+      .container .head-container .social {
+        /* background-color: tomato; */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .container .head-container .social .social-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .container .head-container .social .social-item img {
+            width: 35px; }
+    .container .main {
+      /* seccion para ambos items */
+      /* Seccion de la información; */
+      /* seccion del formulario */ }
+      .container .main .main-information, .container .main .main-form {
+        border-radius: 10px;
+        padding: 30px;
+        width: 40%;
+        height: 40%; }
+      .container .main .main-information {
+        background-color: #bdc3c7; }
+        .container .main .main-information .title {
+          /* text-align: center; */
+          font-size: 20px; }
+        .container .main .main-information .subtitle {
+          color: #707070;
+          font-size: 16px;
+          margin-top: 10px; }
+        .container .main .main-information .info {
+          text-align: justify;
+          font-size: 14px;
+          margin: 10px 0;
+          /* color: red; */ }
+      .container .main .main-form {
+        background-color: rgba(52, 152, 219, 0.8); }
+        .container .main .main-form .title {
+          text-align: center;
+          padding: 10px; }
+        .container .main .main-form .form {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -ms-flex-pack: distribute;
+          justify-content: space-around; }
+          .container .main .main-form .form .input-form {
+            border: none;
+            height: 30px;
+            margin: 5px 0;
+            padding: 3px;
+            border-radius: 5px; }
+          .container .main .main-form .form .area-form {
+            margin: 5px 0; }
+          .container .main .main-form .form .button {
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center; }
+    .container .footer {
+      background-color: #95a5a6;
+      /* position: absolute; */
+      width: 100%;
+      height: 100px;
+      /* bottom: 0; */
+      padding: 8px;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      text-align: center; } }
+
+@media screen and (min-width: 480px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media screen and (min-width: 768px) {
+  .main {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .main .main-information {
+      width: 40%; }
+    .main .main-form {
+      width: 40%; } }
+
+.button {
+  /* font-family: 'Source Sans Pro Bold'; */
+  background: #2185D0;
+  border-radius: 7px;
+  padding: 8px 15px;
+  color: white;
+  border: none; }
